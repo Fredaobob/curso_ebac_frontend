@@ -1,64 +1,27 @@
-@fontePrincipal: 'Roboto', sans-serif;
-@fonteDoTitulo: 'Lobster', cursive;
-@corDoTexto: #fff;
-@corDeFundo: #eb3b5a;
-@corDoTextoDoBotao: #000;
-@corDoFundoDoBotao: #f7b731;
-
+@base-color: #3498db;
 
 body {
-  background-color: @corDeFundo;
-  font-family: @fontePrincipal;
-  color: @corDoTexto;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 h1 {
-  font-family: @fonteDoTitulo;
-  font-size: 3em;
-}
-
-main {
-  max-width: 960px;
-  width: 100%;
-  margin: 0 auto;
-  font-size: 2em;
-  text-align: center;
+    color: @base-color;
+    margin-top: 50px;
 }
 
 button {
-  padding: 16px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 1.3em;
-  margin-top: 16px;
-  border-radius: 8px;
-  background-color: @corDoFundoDoBotao;
-  color: @corDoTextoDoBotao;
-  font-family: @fontePrincipal;
-}
+    background-color: @base-color;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 
-input {
-  display: block;
-  margin: 16px auto 0;
-  font-size: 2em;
-  max-width: 120px;
-  border: none;
-  background-color: transparent;
-  text-align: center;
-  color: @corDoTexto;
-  border-bottom: 6px solid @corDoTexto;
-}
-
-.resultado {
-  padding: 16px;
-  margin-top: 120px;
-  border: 8px dotted @corDoTexto;
-  display: none;
-
-  span {
-    font-weight: bold;
-    font-size: 3em;
-    display: block;
-
-  }
+    &:hover {
+        background-color: darken(@base-color, 10%);
+    }
 }
